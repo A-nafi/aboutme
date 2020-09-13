@@ -1,0 +1,457 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+body{
+    margin: 0;
+}
+/*navbar starts here*/
+
+.navbar{
+    background-color:skyblue;
+    padding: 1% 7%;
+    text-align: center;
+    margin: 0 auto;
+    
+
+   
+}
+.nav-heading{
+    color: white;
+   
+ 
+}
+.nav-logo{
+
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+
+}
+ 
+.nav-menu a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: skyblue;
+
+}
+ .nav-menu a:hover{
+     background-color: slategrey;
+ }
+
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;}
+
+    [class*="col-"] {
+        width: 100%;
+    }
+      
+ .navbar::after{
+    clear: both;
+    content: '';
+    display: table;
+
+ }
+
+ /*navbar ends here*/
+
+/*profile starts here*/
+  
+ .profile{
+     padding: 130px 10px;
+     text-align: center;
+     position: relative;
+ }
+ .profile .weather-icon1{
+     position: absolute;
+     right: 20px;
+     top: 20px;
+     transition: transform 2s; 
+
+ }
+ .profile .weather-icon1:hover{
+     transform: rotate(360deg);
+ }
+
+ .profile .weather-icon2{
+    position: absolute;
+   
+    left: 20px;
+    transition: transform 2s;
+    top: 320px;
+}
+.profile .weather-icon2:hover{
+    transform: rotate(360deg);
+}
+
+
+
+
+.pro-header h1{
+    font-family: 'Satisfy', cursive; 
+    font-size: 3rem;
+}
+.pro-header p{
+    color: goldenrod;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.profile::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+/*profile ends here*/
+
+
+
+/*About Me starts here*/
+
+#img-style{
+   height: 200px;
+   width: 200px;
+   border:2px solid white;
+   border-radius: 50%;
+   
+}
+
+
+.about-me{
+    background-color: slategray;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+h2{
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+.dotted-hr{
+    border: dotted;
+    border-bottom: none;
+    width: 80px;
+
+
+}
+.cv-btn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+
+ .about-me::after{
+      content: '';
+      clear: both;
+      display: table;     
+ }
+
+/*About Me ends here*/
+
+/*professional experience starts here*/
+
+ 
+.logo-img-style{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.card1{
+   background-color: gray;
+   height: 600px;
+   width: 350px;
+   box-sizing: border-box;
+   padding: 10px;
+   float: left;
+   margin: 20px;
+   
+}
+.card-desc p{
+   font-size: 10px;
+}
+
+
+}
+
+.logo-img-style{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.card2{
+   background-color: gray;
+   height: 600px;
+   width: 350px;
+   box-sizing: border-box;
+   padding: 10px;
+   float: left;
+   margin-left: 300px;
+   margin: 20px;
+   
+}
+
+.card3{
+    background-color: gray;
+    height: 600px;
+    width: 350px;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    margin-left: 300px;
+    margin: 20px;
+    
+ }
+
+
+.card-desc p{
+   font-size: 10px;
+}
+
+.card1:hover{
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+
+.card2:hover{
+    box-shadow: 10px 10px 10px 10px black;
+}
+.card3:hover{
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+
+
+.card-heading{
+   background-color: darkgray;
+   color: white;
+   text-align: center;
+   
+}
+
+
+.logo{
+    text-align: center;
+}
+
+.skill-container{
+    padding: 10px 0;
+
+}
+.skill-container li{
+    padding: 25px 0;
+    list-style-type: none;
+    position: relative;
+    
+}
+
+.skill-container li::before{
+    background-color:rgb(192,192,192);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top:50px;
+    border-radius: 1000px;
+    left: 0;
+}
+
+.skill-container li::after{
+    background-color:whitesmoke;
+    width: 0;
+    content: '';
+    position: absolute;
+    height: 20px;
+    top:50px;
+    border-radius: 1000px;
+    left: 0;
+
+
+
+    animation-duration:3s ;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    
+    animation-direction: forward;
+    animation-iteration-count: infinite ;
+    
+    
+
+}
+.skill-container li.html::after{
+    animation-name: html;
+
+}
+@keyframes html{
+ to {
+     width: 90%;
+ }
+
+}
+
+.skill-container li.css::after{
+    animation-name: css;
+
+}
+@keyframes css{
+ to {
+     width: 70%;
+ }
+
+}
+
+.skill-container li.bootstrap::after{
+    animation-name: bootstrap;
+
+}
+@keyframes bootstrap{
+ to {
+     width: 50%;
+ }
+
+}
+
+
+
+
+
+.card-container::after{
+  content: '';
+  clear: both;
+  display: table;
+
+}
+
+
+
+
+/*professional experience ends here*/
+
+
+/*achievement contact starts here*/
+
+
+.achievement-contact {
+   padding: 10px;
+   background-color: teal;
+    
+    
+}
+
+
+.dotted-ach-hr{
+    border-style: dotted;
+    width: 50px;
+}
+.con-hr{
+    border-style: dotted;
+    width: 30px;
+}
+
+#fname{
+    width: 350px;
+    height: 30px;
+}
+
+
+#contact-desc{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#send{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ach-hr{
+    border-style: dotted;
+    width: 100px;
+}
+
+.media-buttons .btn{
+   border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+}
+.media-buttons .btn:hover{
+    background-color: gray;
+}
+
+
+
+.achievement-contact::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+  
+
+
+/*achievement contact ends here*/
+
+/*footer starts here*/
+
+.footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    
+
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+
+.footer::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+
+
+/*footer ends here*/
